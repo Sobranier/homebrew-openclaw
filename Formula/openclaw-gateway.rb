@@ -1,5 +1,5 @@
-class OpenclasCli < Formula
-  desc "OpenClaw gateway guardian daemon (installs as `openclaw-cli`)"
+class OpenclawGateway < Formula
+  desc "OpenClaw gateway guardian daemon (installs as `openclaw-gateway`)"
   homepage "https://github.com/Sobranier/openclaw-doctor"
   url "https://github.com/Sobranier/openclaw-doctor/archive/refs/tags/v0.3.1.tar.gz"
   sha256 "REPLACE_WITH_SHA256_AFTER_RELEASE"
@@ -9,10 +9,10 @@ class OpenclasCli < Formula
 
   def install
     system "npm", "install", *std_npm_args
-    bin.install_symlink Dir["#{libexec}/bin/openclaw-cli"] => "openclaw-cli"
+    bin.install_symlink Dir["#{libexec}/bin/openclaw-cli"] => "openclaw-gateway"
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/openclaw-cli --version")
+    assert_match version.to_s, shell_output("#{bin}/openclaw-gateway --version")
   end
 end
