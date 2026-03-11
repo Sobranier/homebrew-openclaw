@@ -1,8 +1,8 @@
 class OpenclasCli < Formula
   desc "OpenClaw gateway guardian daemon (installs as `openclaw-cli`)"
   homepage "https://github.com/Sobranier/openclaw-cli"
-  url "https://github.com/Sobranier/openclaw-cli/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "25a63396493a18629f96292c36d7e72292eeffa2ecb4affd5cd4dd58038783bd"
+  url "https://github.com/Sobranier/openclaw-cli/archive/refs/tags/v0.3.5.tar.gz"
+  sha256 "8ce885eb1ca1807192987e4f265579c25339b3db5202c7c4c38843bd47310930"
   license "MIT"
 
   depends_on "node"
